@@ -3,16 +3,16 @@ class CreateItems < ActiveRecord::Migration[6.0]
     create_table :items do |t|
       t.string :name
       t.string :category
-      t.string :category_two
+      t.string :subcategory
       t.string :brand
       t.string :size
       t.string :color
       t.string :material
-      t.string :status
-      t.integer :quantity
-      t.integer :times_worn
-      t.boolean :favorite
-      t.boolean :dry_clean
+      t.string :status, default: 'own'
+      t.string :care_type
+      t.integer :quantity, default: 1
+      t.integer :times_worn, default: 0
+      t.boolean :favorite, default: false
       t.string :image_url
       t.references :user, null: false, foreign_key: true
 
