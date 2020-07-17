@@ -26,7 +26,7 @@ item2 = Item.create(name: "White & Navy Stripe Cuff Shirt", category: "Short Sle
 # tank2
 item3 = Item.create(name: "Satin Tank", category: "Tops", subcategory: "Tanks", brand: "Banana Republic", size: "S", color: "blue", material: "polyester", status: "own", care_type: "machine wash, air dry", quantity: 1, times_worn: 0, favorite: true, image_url: "https://www1.assets-gap.com/webcontent/0018/812/932/cn18812932.jpg", user_id: user.id)
 # blazer
-item4 = Item.create(name: "Blazer", category: "Outerwear", subcategory: "Blazers", brand: "1901", size: "2", color: "blue", material: "cotton, spandex", status: "own", care_type: "dry clean", quantity: 1, times_worn: 0, favorite: false, image_url: "https://n.nordstrommedia.com/id/sr3/af9972cd-1e67-4eac-a617-1154b2474c8d.webp?crop=pad&pad_color=FFF&format=jpeg&w=1660&h=2546&dpr=2", user_id: user.id)
+item4 = Item.create(name: "Stretch Cotton Twill Blazer", category: "Outerwear", subcategory: "Blazers", brand: "1901", size: "2", color: "blue", material: "cotton, spandex", status: "own", care_type: "dry clean", quantity: 1, times_worn: 0, favorite: false, image_url: "https://n.nordstrommedia.com/id/sr3/af9972cd-1e67-4eac-a617-1154b2474c8d.webp?crop=pad&pad_color=FFF&format=jpeg&w=1660&h=2546&dpr=2", user_id: user.id)
 
 # BOTTOMS
 # jean shorts
@@ -42,7 +42,7 @@ item8 = Item.create(name: "Ankle Strap Flat Sandal", category: "Shoes", subcateg
 # heel sandals
 item9 = Item.create(name: "Block Heel Platform Sandal", category: "Shoes", subcategory: "Heel Sandals", brand: "Michael Kors", size: "7", color: "brown", material: "leather", status: "own", care_type: "spot clean", quantity: 1, times_worn: 0, favorite: false, image_url: "https://n.nordstrommedia.com/id/sr3/f7a426b4-de79-485d-9e16-2b36c8e39217.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1660&h=1783&dpr=2", user_id: user.id)
 # pumps
-item10 = Item.create(name: "Black Leather Pumps", category: "Shoes", subcategory: "Pumps", brand: "Michael Kors", size: "7", color: "black", material: "leather", status: "own", care_type: "spot clean", quantity: 1, times_worn: 0, favorite: false, image_url: "https://n.nordstrommedia.com/id/sr3/9ee189f8-a4ec-43ea-a66a-f902e9be029a.webp?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838&dpr=2", user_id: user.id)
+item10 = Item.create(name: "Black Leather Pump", category: "Shoes", subcategory: "Pumps", brand: "Michael Kors", size: "7", color: "black", material: "leather", status: "own", care_type: "spot clean", quantity: 1, times_worn: 0, favorite: false, image_url: "https://n.nordstrommedia.com/id/sr3/9ee189f8-a4ec-43ea-a66a-f902e9be029a.webp?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838&dpr=2", user_id: user.id)
 
 # BAGS
 # crossbody
@@ -60,7 +60,7 @@ item15 = Item.create(name: "Beaded Drop Earrings", category: "Accessories", subc
 # earrings2
 item16 = Item.create(name: "Triangle Raffia Earrings", category: "Accessories", subcategory: "Earrings", brand: "Banana Republic", size: "One Size", color: "brown", material: "raffia", status: "own", care_type: "none", quantity: 1, times_worn: 0, favorite: false, image_url: "https://www1.assets-gap.com/webcontent/0018/851/425/cn18851425.jpg", user_id: user.id)
 
-#outfit1 = Outfit.create(name: "NAME", times_worn: 0, style: "STYLE", user_id: user.id)
+#outfit1 = Outfit.create(name: "NAME", style: "STYLE", times_worn: 0, user_id: user.id)
 outfit1 = Outfit.create(name: "Summer Outfit", style: "Casual", times_worn: 0, user_id: user.id)
 outfit2 = Outfit.create(name: "Work Outfit", style: "Work", times_worn: 0, user_id: user.id)
 outfit3 = Outfit.create(name: "BBQ Party Outfit", style: "Casual Party", times_worn: 0, user_id: user.id)
