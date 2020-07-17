@@ -5,26 +5,25 @@ class OutfitsController < ApplicationController
     end
 
     def show
-        @outfit = Outfit.find(params[:id])
+        @outfit = Outfit.find_by(id: params[:id])
         render :json => @outfit
     end
 
     def create 
-        @outfit = Outfit.new(outfit_params)
-        @outfit.save 
+        @outfit = Outfit.create(outfit_params)
         render :json => @outfit 
     end 
 
     def update 
-        @outfit = Outfit.find(params[:id])
+        @outfit = Outfit.find_by(id: params[:id])
         @outfit.update(outfit_params)
         render :json => @outfit
     end 
 
     def destroy
-        @outfit = Outfit.find(params[:id])
+        @outfit = Outfit.find_by(id: params[:id])
         @temp = @outfit
-        @outfit.delete
+        @outfit.destroy
         render :json => @temp
     end
 

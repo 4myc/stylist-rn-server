@@ -32,9 +32,9 @@ item5 = Item.create(name: 'White & Navy Stripe Cuff Shirt', category: 'Tops', ca
 
 # BOTTOMS
 # jean shorts
-item6 = Item.create(name: '4" Denim Shorts', category: 'Bottoms', category_two: 'Shorts', brand: 'Banana Republic', size: '4', color: 'blue', material: 'cotton', status: 'own', quantity: 1, times_worn: 0, favorite: false, dry_clean: false, image_url: 'https://www1.assets-gap.com/webcontent/0018/488/082/cn18488082.jpg', user_id: guest.id)
+item6 = Item.create(name: '4 Inch Inseam Denim Shorts', category: 'Bottoms', category_two: 'Shorts', brand: 'Banana Republic', size: '4', color: 'blue', material: 'cotton', status: 'own', quantity: 1, times_worn: 0, favorite: false, dry_clean: false, image_url: 'https://www1.assets-gap.com/webcontent/0018/488/082/cn18488082.jpg', user_id: guest.id)
 # black shorts
-item7 = Item.create(name: '5" Trouser Shorts', category: 'Bottoms', category_two: 'Shorts', brand: 'Banana Republic', size: '4', color: 'black', material: 'polyester', status: 'own', quantity: 1, times_worn: 0, favorite: false, dry_clean: true, image_url: 'https://www1.assets-gap.com/webcontent/0018/717/060/cn18717060.jpg', user_id: guest.id)
+item7 = Item.create(name: '5 Inch Inseam Trouser Shorts', category: 'Bottoms', category_two: 'Shorts', brand: 'Banana Republic', size: '4', color: 'black', material: 'polyester', status: 'own', quantity: 1, times_worn: 0, favorite: false, dry_clean: true, image_url: 'https://www1.assets-gap.com/webcontent/0018/717/060/cn18717060.jpg', user_id: guest.id)
 # skirt
 item8 = Item.create(name: 'Floral Midi Skirt', category: 'Bottoms', category_two: 'Skirts', brand: 'Givenchy', size: 'S', color: 'multicolor', material: 'polyester', status: 'own', quantity: 1, times_worn: 0, favorite: true, dry_clean: true, image_url: 'https://thewebster.us/media/catalog/product/b/w/bw40d412na_result.jpg?quality=100&fit=bounds&height=&width=', user_id: guest.id)
 # skinny jeans

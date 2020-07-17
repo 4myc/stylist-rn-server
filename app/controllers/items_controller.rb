@@ -5,26 +5,25 @@ class ItemsController < ApplicationController
     end
 
     def show
-        @item = Item.find(params[:id])
+        @item = Item.find_by(id: params[:id])
         render :json => @item
     end
 
     def create 
-        @item = Item.new(item_params)
-        @item.save 
+        @item = Item.create(item_params)
         render :json => @item 
     end 
 
     def update 
-        @item = Item.find(params[:id])
+        @item = Item.find_by(id: params[:id])
         @item.update(item_params)
         render :json => @item
     end 
 
     def destroy
-        @item = Item.find(params[:id])
+        @item = Item.find_by(id: params[:id])
         @temp = @item
-        @item.delete
+        @item.destroy
         render :json => @temp
     end
 
