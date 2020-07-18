@@ -11,7 +11,12 @@ class ItemsController < ApplicationController
 
     def create 
         @item = Item.create(item_params)
-        render :json => @item 
+        if @item.save
+            render :json => @item.to_json
+        else
+            render :json => { :errors => @item.errors.full_messages }
+        end
+            render :json => @item
     end 
 
     def update 
