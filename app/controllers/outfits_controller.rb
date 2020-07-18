@@ -11,8 +11,11 @@ class OutfitsController < ApplicationController
 
     def create 
         @outfit = Outfit.create(outfit_params)
-        render :json => @outfit, status: 201
-     
+        if @item.save	        
+            render :json => @item, status: 201
+        else	
+            render :json => { :errors => @item.errors.full_messages }	
+        end
     end 
 
     def update 

@@ -11,7 +11,11 @@ class UsersController < ApplicationController
 
     def create 
         @user = User.create(user_params)
-        render :json => @user, status: 201
+        if @item.save	        
+            render :json => @item, status: 201
+        else	
+            render :json => { :errors => @item.errors.full_messages }	
+        end
     end
 
     private 
