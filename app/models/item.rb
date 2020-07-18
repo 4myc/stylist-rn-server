@@ -2,5 +2,15 @@ class Item < ApplicationRecord
   belongs_to :user
   has_many :outfits, through: :outfit_items
   has_many :outfit_items
-  validates_presence_of :name, :category, :subcategory, :brand, :size, :color, :material, :status, :care_type, :quantity, :image_url
+  validates :name, presence: true
+  validates :category, presence: true
+  validates :subcategory, presence: true
+  validates :brand, presence: true
+  validates :size, presence: true
+  validates :color, presence: true
+  validates :material, presence: true
+  validates :status, presence: true
+  validates :care_type, presence: true
+  validates :quantity, presence: true
+  validates :image_url, presence: true
 end
