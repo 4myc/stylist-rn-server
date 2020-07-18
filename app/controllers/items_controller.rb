@@ -1,27 +1,23 @@
 class ItemsController < ApplicationController
     def index
         @items = Item.all 
-        render :json => @items
+        render :json => @items, status: 200
     end
 
     def show
         @item = Item.find_by(id: params[:id])
-        render :json => @item
+        render :json => @item, status: 200
     end
 
     def create 
         @item = Item.create(item_params)
-        if @item.save
-            render :json => @item
-        else
-            render :json => { :errors => @item.errors.full_messages }
-        end
+        render :json => @item, status: 201
     end 
 
     def update 
         @item = Item.find_by(id: params[:id])
         @item.update(item_params)
-        render :json => @item
+        render :json => @item, status: 200
     end 
 
     def destroy

@@ -1,27 +1,24 @@
 class OutfitsController < ApplicationController
     def index
         @outfits = Outfit.all 
-        render :json => @outfits
+        render :json => @outfits, status: 200
     end
 
     def show
         @outfit = Outfit.find_by(id: params[:id])
-        render :json => @outfit
+        render :json => @outfit, status: 200
     end
 
     def create 
         @outfit = Outfit.create(outfit_params)
-        if @outfit.save
-            render :json => @outfit
-        else
-            render :json => { :errors => @outfit.errors.full_messages }
-        end
+        render :json => @outfit, status: 201
+     
     end 
 
     def update 
         @outfit = Outfit.find_by(id: params[:id])
         @outfit.update(outfit_params)
-        render :json => @outfit
+        render :json => @outfit, status: 200
     end 
 
     def destroy
