@@ -20,8 +20,11 @@ class ItemsController < ApplicationController
 
     def update 
         @item = Item.find_by(id: params[:id])
-        @item.update(item_params)
-        render :json => @item, status: 200
+        if @item.update(item_params)
+            render :json => @item, status: 200
+        else	
+            render :json => { :errors => @item.errors.full_messages }	
+        end 
     end 
 
     def destroy

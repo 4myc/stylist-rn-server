@@ -20,8 +20,11 @@ class OutfitsController < ApplicationController
 
     def update 
         @outfit = Outfit.find_by(id: params[:id])
-        @outfit.update(outfit_params)
-        render :json => @outfit, status: 200
+        if @outfit.update(outfit_params)
+            render :json => @outfit, status: 200
+        else	
+            render :json => { :errors => @item.errors.full_messages }	
+    end 
     end 
 
     def destroy
