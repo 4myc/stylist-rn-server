@@ -11,6 +11,6 @@ class Item < ApplicationRecord
   validates :material, presence: true
   validates :status, presence: true
   validates :care_type, presence: true
-  validates :quantity, presence: true
+  validates :quantity, presence: true, numericality: true
   validates :image_url, presence: true
 end

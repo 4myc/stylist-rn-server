@@ -14,7 +14,7 @@ class ItemsController < ApplicationController
         if @item.save	        
             render :json => @item, status: 201
         else	
-            render :json => { :errors => @item.errors.full_messages }	
+            render :json => { :errors => @item.errors.full_messages }
         end
     end 
 
@@ -23,7 +23,7 @@ class ItemsController < ApplicationController
         if @item.update(item_params)
             render :json => @item, status: 200
         else	
-            render :json => { :errors => @item.errors.full_messages }	
+            render :json => { :errors => @item.errors.full_messages }
         end 
     end 
 
@@ -36,6 +36,8 @@ class ItemsController < ApplicationController
 
     private 
     def item_params
-        params.require(:item).permit(:name, :category, :subcategory, :brand, :size, :color, :material, :status, :care_type, :quantity, :times_worn, :favorite, :image_url, :user_id)
+        params
+        .require(:item)
+        .permit(:name, :category, :subcategory, :brand, :size, :color, :material, :status, :care_type, :quantity, :times_worn, :favorite, :image_url, :user_id)
     end 
 end

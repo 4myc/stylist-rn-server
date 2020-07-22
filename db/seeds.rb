@@ -17,6 +17,8 @@ guest = User.create(username: "Guest")
 
 #item1 = Item.create(name: "NAME", category: "CATEGORY", subcategory: "CATEGORY_TWO", brand: "BRAND", size: "SIZE", color: "COLOR", material: "MATERIAL", status: "own", care_type: "CARE TYPE", quantity: 1, times_worn: 0, favorite: false, image_url: "URL", user_id: user.id)
 
+item50 = Item.create(name: "Test Item", category: "Tops", subcategory: "Tee", brand: "Brand", size: "S", color: "green", material: "cotton", status: "own", care_type: "machine wash", quantity: 1, times_worn: 0, favorite: false, image_url: "URL", user_id: user.id)
+
 # DRESSES
 # dress
 item1 = Item.create(name: "Sleeveless Tie-Waist Dress", category: "Dresses", subcategory: "Casual Dresses", brand: "Treasure & Bond", size: "S", color: "blue", material: "viscose", status: "own", care_type: "hand wash", quantity: 1, times_worn: 0, favorite: false, image_url: "https://n.nordstrommedia.com/id/sr3/c2ae7574-9582-4991-816a-e5a5856eb825.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=1660&h=2546&dpr=2", user_id: user.id)

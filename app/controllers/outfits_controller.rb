@@ -14,7 +14,7 @@ class OutfitsController < ApplicationController
         if @outfit.save	        
             render :json => @outfit, status: 201
         else	
-            render :json => { :errors => @outfit.errors.full_messages }	
+            render :json => { :errors => @outfit.errors.full_messages }
         end
     end 
 
@@ -23,7 +23,7 @@ class OutfitsController < ApplicationController
         if @outfit.update(outfit_params)
             render :json => @outfit, status: 200
         else	
-            render :json => { :errors => @outfit.errors.full_messages }	
+            render :json => { :errors => @outfit.errors.full_messages }
         end 
     end 
 
@@ -36,6 +36,8 @@ class OutfitsController < ApplicationController
 
     private 
     def outfit_params
-        params.require(:outfit).permit(:name, :style, :times_worn, :user_id)
+        params
+        .require(:outfit)
+        .permit(:name, :style, :times_worn, :user_id)
     end 
 end
