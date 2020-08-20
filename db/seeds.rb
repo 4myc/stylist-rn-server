@@ -17,8 +17,6 @@ guest = User.create(username: "Guest")
 
 #item1 = Item.create(name: "NAME", category: "CATEGORY", subcategory: "CATEGORY_TWO", brand: "BRAND", size: "SIZE", color: "COLOR", material: "MATERIAL", status: "own", care_type: "CARE TYPE", quantity: 1, times_worn: 0, favorite: false, image_url: "URL", user_id: user.id)
 
-item50 = Item.create(name: "Test Item", category: "Tops", subcategory: "Tee", brand: "Brand", size: "S", color: "green", material: "cotton", status: "own", care_type: "machine wash", quantity: 1, times_worn: 0, favorite: false, image_url: "URL", user_id: user.id)
-
 # DRESSES
 # dress
 item1 = Item.create(name: "Sleeveless Tie-Waist Dress", category: "Dresses", subcategory: "Casual Dresses", brand: "Treasure & Bond", size: "S", color: "blue", material: "viscose", status: "own", care_type: "hand wash", quantity: 1, times_worn: 0, favorite: false, image_url: "https://n.nordstrommedia.com/id/sr3/c2ae7574-9582-4991-816a-e5a5856eb825.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=1660&h=2546&dpr=2", user_id: user.id)
@@ -43,7 +41,7 @@ item7 = Item.create(name: "Trouser Pants", category: "Bottoms", subcategory: "Tr
 
 # SHOES
 # flat sandals
-item8 = Item.create(name: "Ankle Strap Flat Sandal", category: "Shoes", subcategory: "Flat Sandals", brand: "Franco Sarto", size: "7", color: "brown", material: "leather", status: "own", care_type: "spot clean", quantity: 1, times_worn: 0, favorite: true, image_url: "https://www1.assets-gap.com/webcontent/0018/812/932/cn18812932.jpg", user_id: user.id)
+item8 = Item.create(name: "Ankle Strap Flat Sandal", category: "Shoes", subcategory: "Flat Sandals", brand: "Franco Sarto", size: "7", color: "brown", material: "leather", status: "own", care_type: "spot clean", quantity: 1, times_worn: 0, favorite: true, image_url: "https://n.nordstrommedia.com/id/sr3/7c4188fa-9bda-4eee-9789-a20938f39268.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1660&h=1783&dpr=2", user_id: user.id)
 # heel sandals
 item9 = Item.create(name: "Block Heel Platform Sandal", category: "Shoes", subcategory: "Heel Sandals", brand: "Michael Kors", size: "7", color: "brown", material: "leather", status: "own", care_type: "spot clean", quantity: 1, times_worn: 0, favorite: false, image_url: "https://n.nordstrommedia.com/id/sr3/f7a426b4-de79-485d-9e16-2b36c8e39217.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1660&h=1783&dpr=2", user_id: user.id)
 # pumps
